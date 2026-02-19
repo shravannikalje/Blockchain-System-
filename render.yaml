@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: chainsys-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    autoDeploy: true
+    healthCheckPath: /api/health
