@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Blockchain System - Frontend</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+	<header class="topbar">
+		<div class="container">
+			<div class="brand">
+				<div class="logo">⛓</div>
+				<span>ChainSys VR</span>
+			</div>
+			<nav>
+				<a href="#dashboard">Dashboard</a>
+				<a href="#transactions">Transactions</a>
+				<a href="#block-form">Create Block</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container" id="dashboard">
+		<section class="hero">
+			<div>
+				<h1>Blockchain System Frontend Prototype</h1>
+				<p>
+					हा frontend तुम्हाला project demo साठी तयार करून देतो: dashboard, transactions, block creation आणि chain preview.
+					Backend जोडल्यावर हे API call करून live data दाखवेल.
+				</p>
+				<div class="btn-group">
+					<button class="btn primary" id="btnAddSample">Add Sample Transaction</button>
+					<button class="btn" id="btnReset">Reset Demo Data</button>
+				</div>
+			</div>
+
+			<div class="hero-card">
+				<h3>Network Snapshot</h3>
+				<p class="muted">Local Demo Chain (Frontend Only)</p>
+				<div class="metrics">
+					<div class="metric">
+						<div class="label">Blocks</div>
+						<div class="value" id="metricBlocks">0</div>
+					</div>
+					<div class="metric">
+						<div class="label">Transactions</div>
+						<div class="value" id="metricTx">0</div>
+					</div>
+					<div class="metric">
+						<div class="label">Pending</div>
+						<div class="value" id="metricPending">0</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="grid">
+			<article class="card" id="transactions">
+				<h2>Recent Transactions</h2>
+				<p class="muted">User activity / payment / token transfer records</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Tx ID</th>
+							<th>From</th>
+							<th>To</th>
+							<th>Amount</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody id="txTableBody"></tbody>
+				</table>
+			</article>
+
+			<article class="card" id="block-form">
+				<h2>Create New Block</h2>
+				<p class="muted">Simulate mining by adding grouped transaction data</p>
+
+				<form class="form" id="createBlockForm">
+					<div class="row">
+						<input type="text" id="creator" placeholder="Creator Node (e.g. Node-A)" required />
+						<input type="number" id="nonce" placeholder="Nonce" required min="1" />
+					</div>
+					<textarea id="blockData" rows="4" placeholder="Block data / description" required></textarea>
+					<button class="btn primary" type="submit">Create Block</button>
+				</form>
+
+				<div class="chain" id="chainView"></div>
+			</article>
+		</section>
+	</main>
+
+	<p class="footer">Frontend phase complete ✅ | Next step: Java/Spring Boot backend + REST APIs</p>
+	<div class="toast" id="toast"></div>
+	<script src="./js/config.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
