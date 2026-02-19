@@ -16,6 +16,11 @@ The frontend works in two modes:
 1. **API mode** (when backend is available)
 2. **Demo mode** (local in-browser fallback if backend is not reachable)
 
+### Live Links
+
+- Frontend Live: https://shravannikalje.github.io/Blockchain-System-/
+- Backend Live (Render): https://chainsys-backend.onrender.com/api/health
+
 ---
 
 ## Tech Stack
@@ -196,6 +201,12 @@ Can be deployed to:
 ## GitHub Repository
 
 `https://github.com/shravannikalje/Blockchain-System-`
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ---
 
