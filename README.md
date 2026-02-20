@@ -19,7 +19,10 @@ The frontend works in two modes:
 ### Live Links
 
 - Frontend Live: https://shravannikalje.github.io/Blockchain-System-/
-- Backend Live (Render): https://chainsys-backend.onrender.com/api/health
+- Backend Live (Render/Railway): Update after deployment
+  - Health check: `https://<your-domain>/api/health`
+
+**Deploy your own**: See `DEPLOYMENT.md` for step-by-step guide
 
 ---
 
@@ -167,7 +170,20 @@ For API mode, set backend URL in `js/config.js`.
 
 ## Deployment Notes
 
-### Backend on Render
+### Backend Deployment
+
+**Option 1: Railway** (recommended - simpler)
+
+See `backend/RAILWAY_DEPLOY.md` for complete steps:
+
+```bash
+cd backend
+railway login
+railway init
+railway up
+```
+
+**Option 2: Render**
 
 `backend/render.yaml` is configured as:
 
