@@ -19,10 +19,14 @@ The frontend works in two modes:
 ### Live Links
 
 - Frontend Live: https://shravannikalje.github.io/Blockchain-System-/
-- Backend Live (Render/Railway): Update after deployment
+- Backend Live: Update after deployment
   - Health check: `https://<your-domain>/api/health`
 
-**Deploy your own**: See `DEPLOYMENT.md` for step-by-step guide
+### 🚀 One-Click Deploy
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/shravannikalje/Blockchain-System-)
+
+**Manual deploy**: See [QUICK_DEPLOY.md](QUICK_DEPLOY.md) for step-by-step guide
 
 ---
 
