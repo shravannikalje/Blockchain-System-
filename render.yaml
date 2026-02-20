@@ -1,7 +1,7 @@
 services:
   - type: web 
     name: chainsys-backend
-    env: docker
+    runtime: docker
     rootDir: backend
     dockerfilePath: ./Dockerfile
     autoDeploy: true
